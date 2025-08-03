@@ -4,7 +4,6 @@ title {
   font-family: Arial, sans-serif;
   background-color: rgb(66, 207, 229);
   font-weight: bold;
-  font-size: 200px;
 }
 
 body {
@@ -17,6 +16,8 @@ h1 {
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+  font-size: 70px;
+  background-color: rgb(13, 144, 164);
 }
 
 h2 {
