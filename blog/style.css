@@ -1,0 +1,23 @@
+title {
+  text-align: center;
+  color: darkblue;
+  font-family: Arial, sans-serif;
+  background-color: greenyellow;
+  font-weight: bold;
+}
+
+body {
+  background-color: aqua;
+  font-family: monospace, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: darkblue;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.wrapper-main {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+}
