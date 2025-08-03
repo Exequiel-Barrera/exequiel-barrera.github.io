@@ -2,22 +2,41 @@ title {
   text-align: center;
   color: darkblue;
   font-family: Arial, sans-serif;
-  background-color: greenyellow;
+  background-color: rgb(66, 207, 229);
   font-weight: bold;
+  font-size: 200px;
 }
 
 body {
-  background-color: aqua;
+  background-color: rgb(217, 243, 243);
   font-family: monospace, sans-serif;
+  font-size: 24px;
 }
 h1 {
   text-align: center;
-  color: darkblue;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 }
-.wrapper-main {
+
+h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  background-color: rgb(66, 207, 229);
+  font-weight: bold;
+}
+h3 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  background-color: rgb(66, 207, 229);
+  font-weight: bold;
+}
+div.wrapper-main {
   width: 80%;
   margin: auto;
   padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
 }
