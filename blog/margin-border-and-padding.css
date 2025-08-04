@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50;
+  background-color: rgb(88, 189, 240);
+}
+div.class.img {
+  text-align: center;
+  margin: 55px auto;
+  border: 5px solid rgb(66, 207, 229);
+}
