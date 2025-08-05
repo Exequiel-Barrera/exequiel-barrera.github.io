@@ -1,13 +1,30 @@
+body {
+  background-color: rgb(217, 243, 243);
+  font-family: monospace, sans-serif;
+  font-size: 24px;
+}
+
 h1 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 50;
-  background-color: rgb(88, 189, 240);
+  font-size: 70px;
+  background-color: rgb(13, 144, 164);
 }
-div.class.img {
-  text-align: center;
-  margin: 55px auto;
-  border: 5px solid rgb(66, 207, 229);
+
+img {
+  display: block;
+  margin: auto;
+  border: solid 5px black;
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+  background-color: aqua;
+}
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
 }
