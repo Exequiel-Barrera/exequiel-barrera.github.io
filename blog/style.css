@@ -9,7 +9,8 @@ title {
 body {
   background-color: rgb(217, 243, 243);
   font-family: monospace, sans-serif;
-  font-size: 24px;
+  font-size: 34px;
+  padding-bottom: 100px;
 }
 h1 {
   text-align: center;
@@ -17,21 +18,21 @@ h1 {
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   font-size: 70px;
-  background-color: rgb(13, 144, 164);
+  background-color: rgb(144, 205, 148);
 }
 
 h2 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
-  background-color: rgb(66, 207, 229);
+  background-color: rgb(117, 185, 181);
   font-weight: bold;
 }
 h3 {
   text-align: center;
   color: rgb(0, 0, 0);
   font-family: Arial, sans-serif;
-  background-color: rgb(66, 207, 229);
+  background-color: rgb(135, 202, 212);
   font-weight: bold;
 }
 .first-word-uppercase-p::first-letter {
@@ -42,6 +43,13 @@ h3 {
   padding-bottom: 0.05em;
   margin-bottom: 0.05em;
   float: left;
+}
+p img {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  float: inline-end;
+  border-radius: 20px;
 }
 div.wrapper-main {
   width: 80%;
