@@ -26,3 +26,18 @@
 #one:hover {
   background-position: right;
 }
+body {
+  background-color: rgb(217, 243, 243);
+  font-family: monospace, sans-serif;
+  font-size: 20px;
+
+  margin: 30px;
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 70px;
+  background-color: rgb(144, 205, 148);
+}
