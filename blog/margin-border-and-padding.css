@@ -129,7 +129,7 @@ h1 {
 }
 
 img {
-  display: block;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -176,4 +176,16 @@ div {
   background-color: rgb(0, 255, 255);
   font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: 24px;
+}
+/* Responsive Design not working */
+@media (max-width: 800px) {
+  .margin {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .margin {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
 }
