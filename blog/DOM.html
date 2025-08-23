@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 id="title">Hello, World!</h1>
+    <button id="btn">Click me</button>
+
+    <script>
+      // Select the <h1> element
+      const heading = document.getElementById("title");
+
+      // Select the button
+      const button = document.getElementById("btn");
+
+      // Change the heading text when the button is clicked
+      button.addEventListener("click", () => {
+        heading.textContent = "You clicked the button!";
+        heading.style.color = "blue"; // also changes style
+      });
+    </script>
+  </body>
+</html>
