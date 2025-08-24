@@ -63,64 +63,73 @@
       <h2>JavaScript-HTML-CSS</h2>
       <p>We could start thinking on the analogy of making a vehicle could be using these tools, where HTML would be the body and structure of the car
         , then have CSS as the paint for car and the interior design, and finally Javascript as the engine that makes the car move and function.</p>
-    <img src="img/istockphoto-1131841061-612x612.jpg  " alt="question">
+    <img src="Screenshot 2025-08-24 200026.png" alt="question">
     </section>
 
-<div class="container">
+
     <section id="Control flow" class="card">
       <h2>Control Flow</h2>
       <p>Control flow in Javascript refers the way how JS control the order in which code is executed. 
          In general , it is like following your normal routine day by day.
          For example if we consider your normal meals a day, you would have a routine like this:</p>
     <ul>
-<li>Have breakfast in the morning/li>
+<li>Have breakfast in the morning</li>
 <li>Have lunch at noon</li>
 <li>Have Dinner at night</li>
 </ul>
          <img src="img/Screenshot 2025-08-23 193641.png" alt="meal routine" />
     </section>
 
-
+<section id="Loops" class="card">
 <h2>Loops</h2>
-<p id="Loops"> Loops in Javascript are used to repeat a serie of instructions or code until a certain condition is met.
- For example if we would go to the gym to do some exercise, we could have a routine like this:
-<ul>
-<li>Do 5 push-ups</li>
-<li>Do 5 sit-ups</li>
-<li>Do 5 squats</li>
-<li>Repeat the routine 5 times</li>
+<p> Loops in Javascript are used to repeat a serie of instructions or code until a certain condition is met.
+ For example if we would go to the gym to do some exercise, we could have a routine like this:</p>
+
+  <ul>
+      <li>Do 5 push-ups</li>
+      <li>Do 5 sit-ups</li>
+      <li>Do 5 squats</li>
+      <li>Repeat the routine 5 times</li>
 </ul>
 <img src="img/Screenshot 2025-08-23 193649.png" alt="gym routine" />
-</p>
-  
-<h2>What DOM is</h2>
-<p id="DOM">DOM stands for Document Object Model, and it is a way to represent the structure of a web page in a tree-like format.
-  It allows us to access and manipulate the elements of a web page using JavaScript.
-  For example, if we consider a web page as a tree, the DOM would be like the branches and leaves of that tree, where each element is a node in the tree.
-  <img src="img/DOM.jpg" alt="DOM tree structure" /> </p>
-<h3 id="example dom">Example interacting with the DOM</h3>
-<p id="example interacting with the DOM">
-  Suppose you have and HTML page like this:
-</p>
-<img src="img/Screenshot 2025-08-23 195209.png" alt="HTML page example" />
-<p id="explanation">
-<h3 id ="What happens here">What happens here</h3>  
-The DOM represents the [h1] and [button] as objects.
-JavaScript uses document.getElementById() to find and interact with them.
-When the button is clicked, the DOM is updated: the [h1] text and style change instantly.</p>
 
-<h3 id="Arrays">Arrays</h3>
-<p id="Arrays">Arrays in JavaScript are like lists that can hold multiple values in a single variable.
+</section>
+
+<section id="What DOM is" class="card">
+  <h2> What DOM is?</h2>
+  <p>DOM stands for Document Object Model, and it is a way to represent the structure of a web page in a tree-like format.
+     It allows us to access and manipulate the elements of a web page using JavaScript.
+     For example, if we consider a web page as a tree, the DOM would be like the branches and leaves of that tree, where each element is a node in the tree.</p>
+   <img src="img/DOM.jpg" alt="DOM tree structure" />
+<h3 id="example dom">Example interacting with the DOM</h3>
+  <p id="example interacting with the DOM">
+       Suppose you have and HTML page like this:</p>
+    <img src="img/Screenshot 2025-08-23 195209.png" alt="HTML page example" />
+ <p id="explanation">
+    
+  <h3 id ="What happens here">What happens here</h3>  
+      <p>The DOM represents the [h1] and [button] as objects.
+      JavaScript uses document.getElementById() to find and interact with them.
+      When the button is clicked, the DOM is updated: the [h1] text and style change instantly.</p>
+</section>
+
+
+<section id="Arrays" class="card">
+  <h2>Arrays</h2>
+  
+  <p id="Arrays">Arrays in JavaScript are like lists that can hold multiple values in a single variable.</p>
      <ul>
        <li>Arrays are ordered lists of values.</li>
        <li>Each value has a numeric index starting at 0.</li>
        <li>You typically use index numbers to access data.</li>
-
+  </ul>
     <img src="img/Screenshot 2025-08-23 201437.png" alt="Array example" />
-       </ul>
+</section>
 
-    <h3 id="objects">Objects</h3>
-    <p id="objects">Objects in JavaScript are like containers that hold related data and functions.</p>
+<section id="objects" class="card">
+  <h2>Objects</h2>  
+  <p id="objects">Objects in JavaScript are like containers that hold related data and functions</p>
+
       <ul>
         <li>Objects are collections of key-value pairs.</li>
         <li>Each value is accessed by its property name (key), not by index.</li>
@@ -151,26 +160,29 @@ When the button is clicked, the DOM is updated: the [h1] text and style change i
             <td>-No guaranteed order (though modern JS preserves insertion order for string keys)</td>
           </tr>
         </table>
-      
-    <h3 id="functions">What functions are</h3>
-    <p id="functions">In JavaScript, a function is a reusable block of code that performs a specific task.</p>
+</section>
+
+<section id="functions" class="card">
+  <h2>Functions</h2>  
+  <p id="functions">Functions in JavaScript are reusable blocks of code that perform a specific task.</p>
+
     <ul>
       <li>You define a function once.</li>
       <li>You can call (use) it many times.</li>
       <li>Functions can take inputs (parameters) and return outputs (results).</li>
-      </ul>
+    </ul>
 
      <h3 id="example function">Example of a function</h3>
   <img src ="img/Screenshot 2025-08-23 202957.png" alt="Function example" />
 
-  <h4>In here:</h4>
+  <h3>In here:</h3>
 <p id="function explanation">
   <ul>
     <li>greet is the function’s name.</li>
     <li>name is a parameter (input).</li>
     <li>It returns a greeting string.</li>
   </ul>
-<h3 id="why functions are useful">Why functions are useful</h3>
+<h2 id="why functions are useful">Why functions are useful</h2>
 <ul>
   <li>Reusability – Write code once, use it multiple times.
     Instead of repeating the same code, you call the function.</li>
@@ -187,3 +199,12 @@ When the button is clicked, the DOM is updated: the [h1] text and style change i
   <li>Abstraction – You don’t need to know how it works internally every time, just what it does.</li>
   </ul>
 </body>
+<footer>
+    <p>&copy; <span id="year"></span> Emotional Intelligence Blog</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</html>
