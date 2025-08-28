@@ -1,10 +1,10 @@
 :root {
-  --bg: #fbfbfd;
-  --card: #308a33;
-  --muted: #060606;
-  --accent: #8e92ef;
-  --accent-2: #c01d1d;
-  --glass: rgba(255, 255, 255, 0.04);
+  --bg: #fafaf5;
+  --card: #ffffff;
+  --muted: #4b5563;
+  --accent: #4ade80;
+  --accent-2: #22c55e;
+  --glass: rgba(74, 222, 128, 0.08);
   --radius: 16px;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial;
@@ -12,11 +12,10 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--bg), #071023);
-  color: #000000;
+  background: var(--bg);
+  color: #1f2937;
   line-height: 1.5;
 }
 .container {
@@ -32,7 +31,7 @@ header {
 }
 .brand {
   display: flex;
-  gap: 18px;
+  gap: 14px;
   align-items: center;
 }
 .logo {
@@ -44,7 +43,7 @@ header {
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  color: #0a0a0a;
+  color: #fff;
 }
 h1 {
   font-size: 1.5rem;
@@ -67,7 +66,7 @@ article.card {
   background: var(--card);
   border-radius: var(--radius);
   padding: 20px;
-  box-shadow: 0 6px 22px rgba(2, 6, 23, 0.6);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.06);
 }
 article h2 {
   margin-top: 0;
@@ -80,7 +79,7 @@ article h2 {
 .intro {
   color: var(--muted);
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   margin-bottom: 16px;
 }
 
@@ -98,19 +97,21 @@ article h2 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  border-left: 5px solid var(--accent);
 }
 .pillar .title {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: 600;
+  color: #166534;
 }
 .pillar .title .emoji {
   font-size: 1.4rem;
 }
 .pillar p {
   margin: 0;
-  color: #dbeafe;
+  color: #1f2937;
 }
 .pillar small {
   color: var(--muted);
@@ -124,13 +125,10 @@ aside {
   position: relative;
 }
 .sidebar-card {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.02),
-    rgba(255, 255, 255, 0.01)
-  );
+  background: #f0fdf4;
   padding: 18px;
   border-radius: 12px;
+  border: 1px solid #bbf7d0;
 }
 .goal {
   display: flex;
@@ -144,6 +142,15 @@ aside {
   border-radius: 50%;
   background: var(--accent);
   margin-top: 6px;
+}
+.cta {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 footer {
