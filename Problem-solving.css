@@ -44,8 +44,38 @@ nav a:hover {
   background-size: 25.3%;
   background-position: right;
   background-repeat: no-repeat;
-  
+
 }
+#Ducky.card {
+  background-image:url(blog/img/Screenshot\ 2025-09-06\ 110549.png);
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  width: 96%;
+  height: 350px;
+
+}
+
+#ducky {
+  color:#000100;
+  position:absolute;
+  padding: 200px;
+  margin:0;
+  left:6.5%;
+}
+#Googling.card{
+  background-image: url(blog/img/Screenshot\ 2025-09-06\ 113327.png);
+  background-size: cover;
+}
+
+#Asking.card{
+  background-image:url(blog/img/Screenshot\ 2025-09-06\ 114044.png);
+  background-size: 10%;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
 
 
 .container {
