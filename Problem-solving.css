@@ -39,6 +39,14 @@ nav a:hover {
   background-repeat: no-repeat; /* avoid tiling */
   border: 2px solid #333;
 }
+#Critical.card {
+  background-image: url(blog/img/why-is-critical-thinking-important.png);
+  background-size: 25.3%;
+  background-position: right;
+  background-repeat: no-repeat;
+  
+}
+
 
 .container {
   width: 80%;
