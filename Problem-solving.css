@@ -48,11 +48,12 @@ nav a:hover {
 }
 #Ducky.card {
   background-image:url(blog/img/Screenshot\ 2025-09-06\ 110549.png);
-  background-size: cover;
+  background-size: small;
   background-repeat:no-repeat;
-  background-position: center;
+  background-position: right;
   width: 96%;
   height: 350px;
+
 
 }
 
@@ -70,10 +71,11 @@ nav a:hover {
 
 #Asking.card{
   background-image:url(blog/img/Screenshot\ 2025-09-06\ 114044.png);
-  background-size: 10%;
-  background-position: center;
+   background-size: 25.3%;
+  background-position: right;
   background-repeat: no-repeat;
-
+  height:150px;
+  
 }
 
 
