@@ -41,19 +41,24 @@ nav a:hover {
 }
 #Critical.card {
   background-image: url(blog/img/why-is-critical-thinking-important.png);
-  background-size: 25.3%;
+  background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
+  display: flex;
+  height: 10vh;
+  
 
 }
 #Ducky.card {
   background-image:url(blog/img/Screenshot\ 2025-09-06\ 110549.png);
-  background-size: small;
-  background-repeat:no-repeat;
-  background-position: right;
-  width: 96%;
-  height: 350px;
-
+   background-size: cover; /* make sure it covers entire section */
+      background-position: center; /* keep image centered */
+      background-repeat: no-repeat; /* no tiling */
+      display: flex;
+      color:#000100;
+      
+      width: 98%;
+      height: 30vh;
 
 }
 
@@ -65,16 +70,22 @@ nav a:hover {
   left:6.5%;
 }
 #Googling.card{
-  background-image: url(blog/img/Screenshot\ 2025-09-06\ 113327.png);
-  background-size: cover;
+  background-image: url(img/Screenshot\ 2025-09-06\ 210833.png);
+  background-size: 500px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+     
 }
 
 #Asking.card{
   background-image:url(blog/img/Screenshot\ 2025-09-06\ 114044.png);
-   background-size: 25.3%;
+   background-size: cover;
   background-position: right;
   background-repeat: no-repeat;
-  height:150px;
+  height:auto;
+  width: auto;
+
+  
   
 }
 
