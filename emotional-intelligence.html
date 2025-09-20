@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emotional Intelligence (EQ) vs IQ — What It Is, Differences, and Why It Matters</title>
+  <meta name="description" content="Learn what Emotional Intelligence (EQ) is, how EQ differs from IQ, and why EQ matters at work and in life. Includes helpful visuals and bite‑size tips." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1221;
+      --bg-soft: #151938;
+      --card: #0f1221;
+      --muted: #9aa3b2;
+      --text: #e9edf5;
+      --accent: #70e1ff; /* cyan */
+      --accent-2: #ffd867; /* warm */
+      --ring: rgba(112, 225, 255, 0.45);
+      --shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.05);
+      --radius-xl: 1.25rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 80% -10%, rgba(112, 225, 255, .15), transparent 60%),
+                  radial-gradient(1000px 700px at -10% 10%, rgba(255, 216, 103, .12), transparent 55%),
+                  linear-gradient(180deg, #0c0f20 0%, #0b0e1a 100%);
+      line-height: 1.65;
+    }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 40;
+      backdrop-filter: blur(10px);
+      background: rgba(10, 13, 28, .6);
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: .9rem 0;
+    }
+    .brand { display: flex; gap: .6rem; align-items: center; text-decoration: none; color: var(--text); }
+    .brand .logo {
+      width: 36px; height: 36px; display: grid; place-items: center; border-radius: 10px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b0f1e;
+      font-weight: 800;
+      box-shadow: var(--shadow);
+    }
+    .brand span { font-weight: 700; letter-spacing: .2px; }
+    nav a { color: var(--muted); text-decoration: none; margin-left: 1rem; font-weight: 500; }
+    nav a:hover { color: var(--text); }
+
+    /* Hero */
+    .hero { padding: 4.5rem 0 3rem; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; align-items: center; }
+    .eyebrow { color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; }
+    h1 { font-family: "Playfair Display", Georgia, serif; font-size: clamp(2.2rem, 4.6vw, 3.6rem); line-height: 1.1; margin: .4rem 0 1rem; }
+    .lead { color: #cbd3df; font-size: clamp(1rem, 1.4vw, 1.125rem); }
+    .hero-figure {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,.06);
+    }
+    .hero-figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cta-row { display: flex; gap: .8rem; margin-top: 1.25rem; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: 0; cursor: pointer; padding: .85rem 1.1rem; border-radius: .9rem;
+      font-weight: 600; letter-spacing: .2px; transition: transform .04s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: var(--shadow);
+    }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), #c4fff9); color: #0c1022; }
+    .btn-ghost { background: rgba(255,255,255,.06); color: #e8eef8; border: 1px solid rgba(255,255,255,.06); }
+    .btn:hover { transform: translateY(-1px); }
+
+    /* Section base */
+    section { padding: 3.2rem 0; }
+    .section-title { font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.6rem, 3.4vw, 2.2rem); margin: 0 0 .6rem; }
+    .kicker { color: var(--muted); margin-bottom: 1.3rem; }
+
+    /* Cards */
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      border: 1px solid rgba(255,255,255,.07);
+      border-radius: var(--radius-xl); padding: 1.2rem; box-shadow: var(--shadow);
+    }
+    .card h3 { margin: .2rem 0 .4rem; font-size: 1.05rem; }
+    .card p { color: #cbd3df; font-size: .98rem; }
+
+    /* Media blocks */
+    .media { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items: center; }
+    .media .img-wrap { border-radius: var(--radius-xl); overflow: hidden; border: 1px solid rgba(255,255,255,.06); box-shadow: var(--shadow); }
+    .media img { width: 100%; height: 100%; display: block; object-fit: cover; }
+    figure { margin: 0; }
+    figcaption { color: var(--muted); font-size: .85rem; padding-top: .4rem; text-align: center; }
+
+    /* Quote */
+    blockquote {
+      margin: 2rem 0; padding: 1.2rem 1.2rem 1.2rem 1rem; border-left: 4px solid var(--accent);
+      background: rgba(112,225,255,.08); border-radius: .75rem;
+    }
+    blockquote p { margin: 0; font-size: 1.05rem; }
+
+    /* Comparison table */
+    .compare { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .98rem; }
+    .compare th, .compare td { padding: .9rem; border-bottom: 1px solid rgba(255,255,255,.08); vertical-align: top; }
+    .compare th { text-align: left; color: var(--accent); }
+    .badge { display: inline-block; padding: .25rem .55rem; border-radius: .5rem; background: rgba(112,225,255,.12); color: var(--accent); font-weight: 600; font-size: .78rem; }
+
+    /* Footer */
+    footer { padding: 2.4rem 0 3.4rem; color: var(--muted); border-top: 1px solid rgba(255,255,255,.08); margin-top: 2rem; }
+
+    /* Utilities */
+    .prose p { margin: .7rem 0; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; }
+    .center { text-align: center; }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid, .media, .grid-2 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 800px){
+      .cards { grid-template-columns: 1fr; }
+      nav { display: none; }
+      .hero { padding-top: 3rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <div class="logo" aria-hidden="true">EQ</div>
+        <span>Emotional Intelligence</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#what-is-eq">What is EQ?</a>
+        <a href="#eq-vs-iq">EQ vs IQ</a>
+        <a href="#why-important">Why EQ Matters</a>
+        <a href="#get-started">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Personal Growth</div>
+          <h1 id="hero-title">Emotional Intelligence (EQ) vs IQ — a Practical Guide</h1>
+          <p class="lead">EQ is the ability to recognize, understand, manage, and express emotions—your own and other people’s. IQ measures cognitive abilities like reasoning and problem‑solving. You need both, but EQ is often the edge in relationships, leadership, and real‑world results.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#get-started">Build Your EQ</a>
+            <a class="btn btn-ghost" href="#eq-vs-iq">Compare EQ & IQ</a>
+          </div>
+        </div>
+        <figure class="hero-figure">
+          <img src="https://images.unsplash.com/photo-1529336953121-c9e3a9a19906?q=80&w=1600&auto=format&fit=crop" alt="Illustration-like photo of a human head silhouette with colorful shapes symbolizing emotions" />
+        </figure>
+      </div>
+    </section>
+
+    <!-- What is EQ -->
+    <section id="what-is-eq" aria-labelledby="what-title">
+      <div class="media">
+        <div>
+          <h2 class="section-title" id="what-title">What is Emotional Intelligence (EQ)?</h2>
+          <p class="kicker">In simple terms: emotions are data. EQ is how well you read and use that data.</p>
+          <div class="prose">
+            <p>Emotional Intelligence is a set of learnable skills that help you notice what you feel, understand why you feel it, and respond in ways that align with your goals and values. Classic EQ frameworks include five core abilities:</p>
+            <div class="cards" role="list">
+              <article class="card" role="listitem">
+                <h3><span class="badge">1</span> Self‑Awareness</h3>
+                <p>Recognizing your emotions and how they affect your thoughts, behavior, and impact on others.</p>
+              </article>
+              <article class="card" role="listitem">
+                <h3><span class="badge">2</span> Self‑Management</h3>
+                <p>Regulating impulses, managing stress, staying flexible, and following through when it’s hard.</p>
+              </article>
+              <article class="card" role="listitem">
+                <h3><span class="badge">3</span> Social Awareness</h3>
+                <p>Empathy and accurate reading of social cues, cultures, and contexts.</p>
+              </article>
+              <article class="card" role="listitem">
+                <h3><span class="badge">4</span> Relationship Skills</h3>
+                <p>Clear communication, healthy boundaries, conflict resolution, and collaboration.</p>
+              </article>
+              <article class="card" role="listitem">
+                <h3><span class="badge">5</span> Motivation</h3>
+                <p>Using values and meaningful goals to energize consistent action—not just willpower.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+        <figure class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1600&auto=format&fit=crop" alt="Two people communicating across a table with warm lighting" />
+          <figcaption>Photo by <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
+        </figure>
+      </div>
+      <blockquote>
+        <p><strong>Quick take:</strong> EQ is not about being "nice" all the time. It’s about being truthful, skillful, and effective with emotions—yours and others’.</p>
+      </blockquote>
+    </section>
+
+    <!-- EQ vs IQ -->
+    <section id="eq-vs-iq" aria-labelledby="compare-title">
+      <div class="media">
+        <figure class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=1600&auto=format&fit=crop" alt="Team collaborating with sticky notes, representing logical and emotional thinking" />
+          <figcaption>Logic + emotion = better decisions.</figcaption>
+        </figure>
+        <div>
+          <h2 class="section-title" id="compare-title">How is EQ Different from IQ?</h2>
+          <p class="kicker">They measure different kinds of intelligence—and they work best together.</p>
+          <table class="compare" role="table" aria-describedby="compare-title">
+            <thead>
+              <tr>
+                <th scope="col">Area</th>
+                <th scope="col">EQ (Emotional Intelligence)</th>
+                <th scope="col">IQ (Cognitive Intelligence)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>What it measures</strong></td>
+                <td>Awareness, regulation, empathy, social skills, values‑driven motivation.</td>
+                <td>Reasoning, memory, verbal/math ability, pattern recognition.</td>
+              </tr>
+              <tr>
+                <td><strong>How it shows up</strong></td>
+                <td>Communication, teamwork, leadership, resilience, decision‑making under stress.</td>
+                <td>Test performance, technical analysis, rapid learning of complex material.</td>
+              </tr>
+              <tr>
+                <td><strong>Change over time</strong></td>
+                <td>Highly trainable with practice and feedback.</td>
+                <td>More stable; can grow, but typically slower.</td>
+              </tr>
+              <tr>
+                <td><strong>Where it shines</strong></td>
+                <td>People‑centric work, negotiations, service, management, parenting, coaching.</td>
+                <td>Research, engineering, analytics, logic‑heavy problem‑solving.</td>
+              </tr>
+              <tr>
+                <td><strong>Best strategy</strong></td>
+                <td colspan="2">Blend both. Use IQ to analyze; use EQ to implement with people in mind.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why EQ matters -->
+    <section id="why-important" aria-labelledby="why-title">
+      <h2 class="section-title" id="why-title">Why is EQ Important?</h2>
+      <p class="kicker">Because most goals require people. EQ is the people‑side of success.</p>
+      <div class="grid-2">
+        <figure class="img-wrap">
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600&auto=format&fit=crop" alt="Manager listening attentively in a meeting" />
+          <figcaption>Leaders with high EQ create trust and momentum.</figcaption>
+        </figure>
+        <div class="prose">
+          <p>High EQ predicts better leadership, teamwork, customer satisfaction, and well‑being. It helps you de‑escalate conflict, coach others, navigate change, and make balanced decisions when emotions run high.</p>
+          <p>Research consistently shows that emotional and social skills contribute to performance at work—especially in roles that depend on collaboration and influence. And in life, EQ supports stronger relationships, mental health, and satisfaction.</p>
+          <div class="cards">
+            <article class="card"><h3>In Work</h3><p>Improves hiring, onboarding, feedback, negotiation, and change management.</p></article>
+            <article class="card"><h3>In Life</h3><p>Builds empathy, boundary‑setting, conflict repair, and meaningful connection.</p></article>
+            <article class="card"><h3>Under Pressure</h3><p>Calms the nervous system, clarifies priorities, and keeps actions aligned with values.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get started tips -->
+    <section id="get-started" aria-labelledby="start-title">
+      <h2 class="section-title" id="start-title">How to Start Building EQ</h2>
+      <p class="kicker">Small, consistent practices beat big, rare efforts.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>1) Name it to tame it</h3>
+          <p>Pause twice a day and label your emotion (e.g., frustrated, hopeful). Labeling reduces intensity and increases choice.</p>
+        </article>
+        <article class="card">
+          <h3>2) Breathe on purpose</h3>
+          <p>Try 4–6 breathing: inhale 4, exhale 6 for 2 minutes to exit fight‑or‑flight before responding.</p>
+        </article>
+        <article class="card">
+          <h3>3) Ask better questions</h3>
+          <p>Swap “What’s wrong with them?” for “What might they be feeling or needing?” Empathy opens options.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p class="center">© <span id="year"></span> Emotional Intelligence Blog. Photos courtesy of Unsplash.</p>
+  </footer>
+
+  <a href="#top" aria-label="Back to top" style="position: fixed; right: 16px; bottom: 18px; text-decoration: none;">
+    <button class="btn btn-primary" style="padding:.7rem .9rem; border-radius: 999px;">↑</button>
+  </a>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

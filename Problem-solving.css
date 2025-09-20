@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+header {
+  background: #4caf50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 100 px;
+}
+nav {
+  background: #333;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+nav a:hover {
+  background: #575757;
+}
+.techniques-nav {
+  background: #2e7d09;
+  background-image: url(img/Screenshot\ 2025-09-04\ 220417.png);
+  background-size: cover;
+  background-position: center;
+}
+#what.card {
+  background-image: url(img/Screenshot\ 2025-09-04\ 224637.png);
+  background-size: contain; /* show full image */
+  background-position: right;
+  background-repeat: no-repeat; /* avoid tiling */
+  border: 2px solid #333;
+}
+#Critical.card {
+  background-image: url(blog/img/why-is-critical-thinking-important.png);
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  display: flex;
+  height: 10vh;
+  
+
+}
+#Ducky.card {
+  background-image:url(blog/img/Screenshot\ 2025-09-06\ 110549.png);
+   background-size: cover; /* make sure it covers entire section */
+      background-position: center; /* keep image centered */
+      background-repeat: no-repeat; /* no tiling */
+      display: flex;
+      color:#000100;
+      
+      width: 98%;
+      height: 30vh;
+
+}
+
+#ducky {
+  color:#000100;
+  position:absolute;
+  padding: 200px;
+  margin:0;
+  left:6.5%;
+}
+#Googling.card{
+  background-image: url(img/Screenshot\ 2025-09-06\ 210833.png);
+  background-size: 500px;
+  background-position: center; 
+  background-repeat: no-repeat; 
+     
+}
+
+#Asking.card{
+  background-image:url(blog/img/Screenshot\ 2025-09-06\ 114044.png);
+   background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height:auto;
+  width: auto;
+
+  
+  
+}
+
+
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+h1,
+h2 {
+  color: #4caf50;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 20px;
+}
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.table,
+th {
+  font-size: 28px;
+  color: green;
+}
+p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+ul {
+  font-size: 20px;
+  line-height: 1.6;
+}

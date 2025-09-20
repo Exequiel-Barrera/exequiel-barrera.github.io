@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript</title>
+    <meta charset="UTF-8" />
+    <link href="javascript-dom.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <a href="index.html">
+      <button class="button-home" id="one"><span>Home</span></button>
+    </a>
+
+     <a href="margin-border-and-padding.html">
+      <button class="button-margin" id="two">
+        <span>Margin, Border, and Padding</span>
+      </button>
+    </a>
+
+    <a href="Identity, Values, and Strengths Exploration .html">
+      <button class="button-identity" id="three">
+        <span>Identity, Values, and Strengths Exploration</span>
+      </button>
+    </a>
+    
+    <a href="te-houtaewa-template.html">
+      <button class="button-te-houtaewa" id="four">
+        <span>Te Houtaewa</span>
+      </button>
+
+       <a href="learning plan.html">
+      <button class="button-learning" id="two">
+        <span>Learning Plan</span>
+      </button>
+    </a>
+    <a href="EQvsIQ.html">
+      <button class="button-EQvsIQ" id="five">
+        <span>EQ vs IQ</span>
+      </button>
+    </a>  
+    <a href="Neuroplasticity.html">
+      <button class="button-neuroplasticity" id="six">
+        <span>Neuroplasticity</span>
+      </button>
+    </a>
+     <a href="problem-solving.html">
+      <button class="button-problem-solving" id="seven">
+        <span>Problem-Solving</span>
+      </button>
+    </a>
+  </head>
+
+
+<body>
+
+  <header>
+    
+    <p style="font-size: 32px; font-family: Arial, sans-serif;font-weight: bold;">Javascript-DOM</p>
+
+  </header>
+<nav>
+    <a href="#what">What is JavaScript?</a>
+    <a href="#control flow">Control Flow</a>
+    <a href="#Loops">Loops</a>
+    <a href="#What DOM is">What DOM is</a>
+    <a href="#Arrays">Arrays</a>
+    <a href="#objects">Objects</a>
+    <a href="#functions">Functions</a>
+  </nav>
+
+  
+<div class="container">
+    <section id="what" class="card">
+      <h2>JavaScript-HTML-CSS</h2>
+      <p>We could start thinking on the analogy of making a vehicle could be using these tools, where HTML would be the body and structure of the car
+        , then have CSS as the paint for car and the interior design, and finally Javascript as the engine that makes the car move and function.</p>
+    <img src="blog/img/Screenshot 2025-08-24 200026.png" alt="question">
+    </section>
+
+
+    <section id="Control flow" class="card">
+      <h2>Control Flow</h2>
+      <p>Control flow in Javascript refers the way how JS control the order in which code is executed. 
+         In general , it is like following your normal routine day by day.
+         For example if we consider your normal meals a day, you would have a routine like this:</p>
+    <ul>
+<li>Have breakfast in the morning</li>
+<li>Have lunch at noon</li>
+<li>Have Dinner at night</li>
+</ul>
+         <img src="blog/img/Screenshot 2025-08-23 193641.png" alt="meal routine" />
+    </section>
+
+<section id="Loops" class="card">
+<h2>Loops</h2>
+<p> Loops in Javascript are used to repeat a serie of instructions or code until a certain condition is met.
+ For example if we would go to the gym to do some exercise, we could have a routine like this:</p>
+
+  <ul>
+      <li>Do 5 push-ups</li>
+      <li>Do 5 sit-ups</li>
+      <li>Do 5 squats</li>
+      <li>Repeat the routine 5 times</li>
+</ul>
+<img src="blog/img/Screenshot 2025-08-23 193649.png" alt="gym routine" />
+
+</section>
+
+<section id="What DOM is" class="card">
+  <h2> What DOM is?</h2>
+  <p>DOM stands for Document Object Model, and it is a way to represent the structure of a web page in a tree-like format.
+     It allows us to access and manipulate the elements of a web page using JavaScript.
+     For example, if we consider a web page as a tree, the DOM would be like the branches and leaves of that tree, where each element is a node in the tree.</p>
+   <img src="blog/img/DOM.jpg" alt="DOM tree structure" />
+<h3 id="example dom">Example interacting with the DOM</h3>
+  <p id="example interacting with the DOM">
+       Suppose you have and HTML page like this:</p>
+    <img src="blog/img/Screenshot 2025-08-23 195209.png" alt="HTML page example" />
+ <p id="explanation">
+    
+  <h3 id ="What happens here">What happens here</h3>  
+      <p>The DOM represents the [h1] and [button] as objects.
+      JavaScript uses document.getElementById() to find and interact with them.
+      When the button is clicked, the DOM is updated: the [h1] text and style change instantly.</p>
+</section>
+
+
+<section id="Arrays" class="card">
+  <h2>Arrays</h2>
+  
+  <p id="Arrays">Arrays in JavaScript are like lists that can hold multiple values in a single variable.</p>
+     <ul>
+       <li>Arrays are ordered lists of values.</li>
+       <li>Each value has a numeric index starting at 0.</li>
+       <li>You typically use index numbers to access data.</li>
+  </ul>
+    <img src="blog/img/Screenshot 2025-08-23 201437.png" alt="Array example" />
+</section>
+
+<section id="objects" class="card">
+  <h2>Objects</h2>  
+  <p id="objects">Objects in JavaScript are like containers that hold related data and functions</p>
+
+      <ul>
+        <li>Objects are collections of key-value pairs.</li>
+        <li>Each value is accessed by its property name (key), not by index.</li>
+        <li>Keys are usually strings (or symbols), not numbers.</li>
+      </ul>
+
+        <img src="blog/img/Screenshot 2025-08-23 201808.png" alt="Object example" />
+
+        <table>
+          <tr>
+            <th>Arrays</th>
+            <th>Objects</th>
+          </tr>
+          <tr>
+            <td>-Arrays	Objects Ordered by index (0, 1, 2, …)</td>
+            <td>-Organized by keys (name-value pairs)</td>
+          </tr>
+          <tr>
+            <td>-Access with fruits[0]</td>
+            <td>-Access with person.name or person["name"]</td>
+          </tr>
+          <tr>
+            <td>-Best for lists/collections</td>
+            <td>-Best for entities with attributes</td>
+          </tr>
+          <tr>
+            <td>-Maintains order automatically</td>
+            <td>-No guaranteed order (though modern JS preserves insertion order for string keys)</td>
+          </tr>
+        </table>
+</section>
+
+<section id="functions" class="card">
+  <h2>Functions</h2>  
+  <p id="functions">Functions in JavaScript are reusable blocks of code that perform a specific task.</p>
+
+    <ul>
+      <li>You define a function once.</li>
+      <li>You can call (use) it many times.</li>
+      <li>Functions can take inputs (parameters) and return outputs (results).</li>
+    </ul>
+
+     <h3 id="example function">Example of a function</h3>
+  <img src ="blog/img/Screenshot 2025-08-23 202957.png" alt="Function example" />
+
+  <h3>In here:</h3>
+<p id="function explanation">
+  <ul>
+    <li>greet is the function’s name.</li>
+    <li>name is a parameter (input).</li>
+    <li>It returns a greeting string.</li>
+  </ul>
+<h2 id="why functions are useful">Why functions are useful</h2>
+<ul>
+  <li>Reusability – Write code once, use it multiple times.
+    Instead of repeating the same code, you call the function.</li>
+
+  <li>Organization – Break a big program into smaller, logical pieces.
+      Easier to read and understand.</li>
+
+
+  <li>Avoid Repetition (DRY Principle: Don’t Repeat Yourself)
+      Makes your code shorter and easier to maintain.</li>
+
+  <li>Easier Debugging – If something goes wrong, you only fix the function in one place.</li>
+
+  <li>Abstraction – You don’t need to know how it works internally every time, just what it does.</li>
+  </ul>
+</body>
+<footer>
+    <p>&copy; <span id="year"></span> Emotional Intelligence Blog</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</html>
