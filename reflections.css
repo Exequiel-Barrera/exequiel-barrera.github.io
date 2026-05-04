@@ -62,3 +62,22 @@ p.title {
   font-weight: bold;
   margin-top: 10px;
 }
+.card h2 {
+  color: #4caf50;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card h3 {
+  color: #222;
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
